@@ -1,25 +1,27 @@
 Dates and Times:
 
 How do you get the current date and time?
-  Time.now
+  Time.now or Time.new
 
 How do you find just the Year? Month? Hour? Second? Weekday?
-  Year: Date.today.strftime("%Y") => "2017"
-  Month: Date.today.strftime("%B") => "April"
-  Weekday: Date.today.strftime("%A") => "Saturday"
-  Hour: Time.now.strftime("%H") => "17"
-  Hour: Time.now.strftime("%I") => "05"
-
-  Minute: Time.now.strftime("%M")
-  Second: Time.now.strftime("%S")
+  Year: Date.today.strftime("%Y") => "2017"    or Time.now.year
+  Month: Date.today.strftime("%B") => "April"    or Time.now.month
+  Weekday: Date.today.strftime("%A") => "Saturday" or Time.now.day
+  Hour: Time.now.strftime("%H") => "17"     or Time.now.hour
+  Hour: Time.now.strftime("%I") => "05"     
+ 
+  Minute: Time.now.strftime("%M")     or Time.now.min
+  Second: Time.now.strftime("%S")     or Time.now.sec 
   Time.now.strftime("%p") => gives PM or AM
 
 How do you create a Time specifically for 12/25/2013?
-
+  Time.new(year, month, day, hour, min, sec, time_zone_offset_from_utc)
+  Time.new(2018, april, 15, 02, 30, 30)
 
 How do you find how many days have passed between two Time's?
 
 What's the difference between UTC and GMT and Local times?
+  UTC and GMT are same, local time is user's time
 
 How would you find out the time that was 100 seconds ago? 10 days ago?
 

@@ -1,17 +1,57 @@
 Hashes:
 
 What is a hash?
+  A hash is a collection of key value pairs.
+
 What are keys and values?
+  values are any kind of data stored in the hash and this data can be accessed through its key.
+
 How is a hash similar to an Array?
+  both are collection of data and can store all kinds of data types.
+
 How is a hash different from an Array?
+  Arrays are inclosed in [] and the items can be accessed via integer index. Hash are enclosed in  {} and accessed via keys and unline arrays have no order.
+
 What are 3 ways to create a hash?
+ hash.new; hash={}; hash={"a" => 23, "b"="wert", :c => 47}
+
 What is the hash rocket?
+  =>
+
 How do you access data in a hash?
+  hash[key] => will return the value
+
 How do you change data in a hash?
+  hash={"a" => 23, "b"=>"wert", :c => 47}
+  add=> hash["key"] = "value"
+  modify=> hash["a"] = 21
+
 What types of data are good to store in a hash?
+  
+
 What are options hashes?
+  when hashes are used in Rails as a way of passing options or parameters to a method, they are called Options Hashes.
+
 How do you delete data from a hash?
+  hash["key"]=nil
+
 How do you add hashes together?
+  hash={"a" => 23, "b"=>"wert", :c => 47}
+  hash1={"c" => 23}
+  hash.merge(hash1)
+
 How do you list out all the keys or values?
+  hash.keys; hash.values
+
 How do you see if the hash contains a key or value?
+  To check if value is present:
+   hash.value?(value_you_seek)
+  To find the key associated with that value:
+   hash.key(value_you_seek)
+  To check if key is present:
+   hash.key?("key") => false
+  To find the value associated with that key:
+    hash[key]
+
 What is a set?
+  Its a hash where all values are either true or false

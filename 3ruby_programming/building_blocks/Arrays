@@ -18,6 +18,7 @@ How do you access items in an array?
   arr.drop(3) => [8,9,10]
 
 How can you access a specific group of items in an array?
+  arr[2..4]
 
 How do you modify the items in an array? arr=[1,2,35,6,8,9,10]
   arr[4]=22 => [1, 2, 35, 6, 22, 9, 10]
@@ -29,6 +30,7 @@ How do you find the values in one array that aren't in another?
   
 
 How do you find values in both arrays?
+  arr1&arr2
 
 What is the difference between push/pop and shift/unshift?
   arr.push(3) will add 3 to the end of array
@@ -38,6 +40,7 @@ What is the difference between push/pop and shift/unshift?
 
 
 What is the shovel operator?
+  <<
 
 How is > arr.pop different from > arr[-1]?
   arr.pop removes last element and returns modified array; arr[-1] will
