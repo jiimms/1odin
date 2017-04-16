@@ -1,0 +1,90 @@
+Arrays: 
+Arrays are ordered, integer indexed collections of any objects.
+
+What are three ways to create an array?
+  array=[] ;  array=Array.new ; %w[1 2 r 5] => ["1", "2", "r", "5"]
+  array = Array.[](1, 2, 3, 4,5) ; array=Array[1,2,3] 
+
+How do you prepopulate the array with default data?
+  Array.new(3) => [nil, nil, nil]
+  Array.new(3,5) => [5, 5, 5]
+
+How do you access items in an array?
+  arr=[1,2,35,6,8,9,10]
+  arr[2] => 35; arr[-1] => 10; arr[2,4] => 35,6,8,9; arr[0..2] => 1,2,35
+  arr.at(1) => 2 ; 
+  To return the first n elements of an array:
+  arr.take(3) => [1, 2, 35]
+  arr.drop(3) => [8,9,10]
+
+How can you access a specific group of items in an array?
+
+How do you modify the items in an array? arr=[1,2,35,6,8,9,10]
+  arr[4]=22 => [1, 2, 35, 6, 22, 9, 10]
+
+How do you combine arrays?
+  arr + arr1
+
+How do you find the values in one array that aren't in another?
+  
+
+How do you find values in both arrays?
+
+What is the difference between push/pop and shift/unshift?
+  arr.push(3) will add 3 to the end of array
+  arr.unshift(2,3) will add 2,3 to beginning of array
+  arr.pop(n) will remove last n elements from the array
+  arr.shift(n) will remove first n elements from the array
+
+
+What is the shovel operator?
+
+How is > arr.pop different from > arr[-1]?
+  arr.pop removes last element and returns modified array; arr[-1] will
+  return element at index position -1(last item), array will be unchanged
+
+How is pushing or <<ing another array into your array different from just adding them together?
+  arr1<<arr2 or arr1.push(arr2) will modify arr1 and arr2 will be included as subarray. arr1=[1,2] arr2=[5,6] arr1 << arr2 => [1,2,[5,6]]
+  arr1+arr2 will create a new array [1,2,5,6] with original arrays unchanged
+
+How do you delete items in an array?
+  arr.pop(n) will remove last n elements from the array
+  arr.shift(n) will remove first n elements from the array
+  To delete at specific index 
+  arr.delete_at(3) =>item at 3 will be removed from array.
+  To delete all instances of a specific item
+  arr.delete(2) all 2's will be removed
+
+Why should you be careful deleting items in an array?
+  why not?? what should you be not careful with??
+
+How can you convert arrays to strings?
+  arr.to_s ; arr.join ; arr.join("-")
+
+How can you convert from other data types to arrays?
+  string.split("") ; string.split("-")
+
+How can you figure out if an array contains a particular value?
+  arr.include?("value")
+
+How do you find the biggest item in an array?
+  arr.max
+
+How do you find the smallest item in an array?
+  arr.min
+
+How do you remove any duplicates from your array?
+  arr.uniq will return array with dups removed but original arr will remove unchanged arr.uniq! will modify the original array 
+
+How do you find out how big an array is?
+  a.size; a.length; a.count
+
+How do you put an array in order?
+  arr.sort; a.sort!
+  arr.sort { |x,y| y <=> x }  => sort in reverse order
+
+What are the naming conventions for arrays?
+  should start with alphabet(small case), can have numbers(except not in the beginning), can have underscore but no other special chars.
+
+What should you store in arrays?
+  various data kinds can be stored in arrays

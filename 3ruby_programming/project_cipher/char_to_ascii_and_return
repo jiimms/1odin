@@ -1,0 +1,20 @@
+character to ASCII code
+
+"abcdef".each_byte do |c|
+    puts c
+end
+
+=> 
+97
+98
+99
+100
+101
+102
+
+"a".chr => 97
+
+A-Z = 65-90 decimal
+
+a-z = 97-122 decimal
+

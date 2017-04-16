@@ -1,0 +1,78 @@
+Strings:
+
+What's the difference between single and double quotes?
+  Single quotes are just used to specify/define strings. But Double Quotes you can use to specify/define strings and string interpolation.
+  Except for escaping single quotes themselves, e.g 'don\'t'
+  single-quoted strings don't process ASCII escape codes
+  puts "a\nb" # print a, then b at newline 
+
+What is string interpolation?
+  string interpolation evaluates the code in #{} and gives its value.
+  When the expression to be interpolated into the string literal is simply a reference to a global, instance or class variable, then the curly braces may be omitted.
+  @var = "Hi"
+  puts "#@var there!"  #=> "Hi there!"
+
+  @@var = "Hi"
+  puts "#@@var there!" #=> "Hi there!"
+
+  $var = "Hi"
+  puts "#$var there!"  #=> "Hi there!"
+
+What are escape characters?
+  an escape character is a character which invokes an alternative interpretation on subsequent characters in a character sequence.
+  ex \n for newline, \t for tab, \s for space, \b for backspace.
+
+How do you make other things into strings?
+  with double quotes or .to_s
+
+How do you concatenate strings?
+ s= "tree"; s.object_id => 47271397654200
+ s.concat("green") => "treegreen"; s.object_id => 47271397654200
+ if you use + to add strings, new object is created 
+
+How do you access a specific character or substring?
+  "green"[4] => "n" ;
+  "green"[2,2] => "ee" ; start from index 2 and take 2 chars
+  "green"[2..4] => "een" ; range starting from index 2 till index 4
+  "green".slice(0) => "g"
+  "green".slice(2,2) => "ee";
+  "greenbird".slice(3..8) => "enbird"
+  "procrastinationislargestnation"[-10..-1] => "gestnation"
+    Get the last 10 characters in order
+  
+
+How do you split up strings into arrays?
+   "string".split("") => ["s", "t", "r", "i", "n", "g"]
+
+How are strings and arrays similar?
+
+How do you get and clean up user input on the command line?
+  input=gets.chomp or gets.strip
+
+What does it mean that strings are "mutable" and why care?
+  Mutable objects are objects whose state can change. Immutable objects are objects whose state never changes after creation.
+  strings can be changed with concatenation.
+  a="tree" => "tree"
+  a.object_id => 47271397049080
+  a.concat("house") => "treehouse"
+  a.object_id => 47271397049080
+  a is still the same object but value has changed/mutated.
+
+  why care?? dont know
+
+
+What is a symbol?
+  Symbols are immutable; prefixed by a colon; symbols doesnt have to be declared; "name".to_sym => :name
+  :'tree' or :"tree" or :tree => all symbols
+
+How is a symbol different from a string?
+  Symbols are immutable while strings are mutable.
+  A Symbol is the most basic Ruby object you can create. It's just a name and an internal ID. Symbols are useful because a given symbol name refers to the same object throughout a Ruby program. Symbols are more efficient than strings. Two strings with the same contents are two different objects, but for any given name there is only one Symbol object. This can save both time and memory.
+
+What is a Regular Expression (RegEx)?
+  A regular expression is simply a way of specifying a pattern of characters to be matched in a string. In Ruby, you typically create a regular expression by writing a pattern between forward slash characters /jimmy/
+
+How can you center or right-justify a string?
+  "tree".center(20); "tree".rjust(20); "tree".ljust(20)
+
+

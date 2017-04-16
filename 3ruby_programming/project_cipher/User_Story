@@ -1,0 +1,25 @@
+User Story
+
+Implement a caesar cipher that takes in a string and the shift factor and then outputs the modified string:
+
+  > caesar_cipher("What a string!", 5)
+  => "Bmfy f xywnsl!"
+
+  get user input with gets
+  split string to array
+  convert each item to ASCII equivalent plus shift value
+  save in new array
+  convert new array back to string with join
+
+  A-Z = 65-90 decimal
+  a-z = 97-122 decimal
+
+  ex Z =90
+  90+5 =95 
+  Z shoube be E or 69
+  95-26 = 69
+  so 
+  if ('A'..'Z') === e
+    if e + n is bigger than 90, subtract 26 from total
+  elsif ('a'..'z') === e
+  

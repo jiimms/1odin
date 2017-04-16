@@ -1,0 +1,33 @@
+Other Random Stuff:
+
+What is nil?
+  nil is a special value reserved to indicate the absence of value
+
+How do you check if something is nil?
+  .nil?  ex 0.nil? => false; nil.nil? => true
+
+What's the difference between nil and blank and empty?
+Are the following nil or empty?
+" ", "", [], [""], {}
+  new file
+
+What's the difference between puts and p and print?
+  puts prints on a new line, return value is nil
+  print prints on same line, return value is nil
+  p prints on same line, return value is what it has printed
+
+What does inspect do?
+  Returns a printable version of str, surrounded by quote marks, with special characters escaped.
+
+What do +=, -=, *= and /= do?
+
+What is parallel assignment?
+  if var doesnt have a value then value is assigned
+
+What's the easiest way to swap two variables?
+  a, b = b, a
+
+
+  A-Z =  65-90 decimal
+
+  a-z =  97-122 decimal
